@@ -8,5 +8,11 @@
 #include <windows.h>
 
 extern "C" {
-	DECLDIR void popUp(LPCSTR title, LPCSTR text);
+	/*
+	create a pop up message using message box (using ascii)
+
+	@param title - the title of the popup message
+	@param text - the text of the message
+	*/
+	DECLDIR void popUp(const char* title, const char* text);
 }

@@ -5,7 +5,7 @@
 
 
 extern "C" {
-DECLDIR void popUp(LPCSTR title, LPCSTR text) {
+DECLDIR void popUp(const char* title, const char* text) {
     int value = MessageBoxA(NULL, text, title, MB_ICONEXCLAMATION);
 }
 }
